@@ -1,0 +1,633 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+.container-fluid{
+    background: linear-gradient(#D500FF, #B500FF, #9200FF);
+    margin-top:10px;
+    height:55px;
+    /* position: fixed; */
+}
+body{
+    background-color:rgba(0,0,0,0.5)
+}
+.navbar{
+    z-index: 1;
+}
+.projectoveral{
+    overflow: hidden;
+
+}
+.aboutme{
+    margin-top:20px;
+    height:675px;
+    width:50%;
+    background-color:transparent;
+    padding: 20px;
+    position: relative;
+    animation-name:aboutme1;
+    animation-duration:3s;
+    
+}
+@keyframes aboutme1{
+    0%{
+        right:160%;
+    }
+    50%{
+        right: 0%;
+    }
+    100%{}
+}
+.myname{
+    font-size: 50px;
+    color: aquamarine;
+}
+.myimgdiv{
+    margin-top: 20px;
+    height:675px;
+    width:50%;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutoverall{
+    display: flex;
+    height:100vh;
+    padding: 10px;
+    width: 100%;
+    background-color:black;
+    
+    
+}
+.fnt{
+    font-family:'Times New Roman', Times, serif;
+}
+.pimg{
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+ position: relative;
+ animation-name:pimgani;
+ animation-duration:2s;
+
+}
+@keyframes pimgani{
+    0%{
+        left:160%
+    }
+    100%{
+        left:0;
+    }
+}
+.pimg:hover{
+    transform:rotateY(360deg);
+    transition:2s;
+}
+.icons{
+    font-size: 50px;
+    margin: 30px;
+    color: dodgerblue;
+}
+.icons:hover{
+    color:white;
+}
+button:hover{
+    transform: scale(1.1,1.1);
+}
+.skillsoveralldiv{
+    padding:50px;
+    height:100vh;
+    width: 100%;
+    background-color: black;
+
+}
+.frontbackoverall{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap:200px;
+
+}
+.frontend{
+    height:400px;
+    width: 25%;
+    background-color:transparent;
+    border-radius:20px;
+    
+    background-image: no-repeat;
+    background-size: cover;
+    animation-name:frontendani;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    border: 2px solid white;
+    position: relative;
+    
+}
+.frontend:hover{
+    transform:rotateY(360deg);
+    transition: 2s;
+    box-shadow: 0px 0px 5px #e100ff, 0px 0px 25px #e100ff, 0px 0px 50px #e100ff, 0px 0px 100px #e100ff;
+
+}
+@keyframes frontendani{
+    from{
+        right:140%;
+        transform: rotatex(360deg);
+    }
+    to{
+    right:0%;
+    }
+}
+.backend{
+    height:400px;
+    width: 25%;
+    background-color: black;
+    border-radius:20px;
+    border:2px solid white;
+    position: relative;
+    animation-name:backani;
+    animation-duration: 2s;
+}
+@keyframes backani{
+    from{
+        left:130%;
+        transform: rotatex(360deg);
+    }
+    to{
+        left:0%
+    }
+}
+.backend:hover{
+
+        transform:rotateY(360deg);
+        transition: 2s;
+        box-shadow: 0px 0px 5px #e100ff, 0px 0px 25px #e100ff, 0px 0px 50px #e100ff, 0px 0px 100px #e100ff;
+}
+.frontnames{
+    text-align: center;
+    color: aqua;
+    border: 2px solid white ;
+}
+.names{
+    margin: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width:230px;
+    height:40px;
+    border: 2px solid black;
+    margin-bottom:30px;
+    border-radius:20px;
+    border: 2px solid ;
+}
+.fronticons{
+    margin:0px 10px 0px 10px;
+    color:rgb(73, 66, 212);
+}
+.educationoverall{
+    min-height:800px;
+    width: 100%;
+    padding-top:50px;
+    background-color: black;
+}
+.container1{
+    padding:5px;
+    margin: 100px auto;
+    background: #231e39;
+    color: #b3b8cd;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+    animation-name:con1;
+    position: relative;
+    animation-duration:2s;
+}
+@keyframes con1{
+    from{
+        right:160%;
+    }
+    to{
+        right:0;
+    }
+}
+.container2{
+    padding:5px;
+    margin: 100px auto;
+    background: #231e39;
+    color: #b3b8cd;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+    animation-name:con2;
+    position: relative;
+    animation-duration:2s;
+}
+@keyframes con2{
+    from{
+        bottom:160%;
+    }
+    to{
+        bottom:0;
+    }
+}
+.container3{
+    padding:5px;
+    margin: 100px auto;
+    background: #231e39;
+    color: #b3b8cd;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+    animation-name:con3;
+    position: relative;
+    animation-duration:2s;
+}
+@keyframes con3{
+    from{
+        left:160%;
+    }
+    to{
+        left:0;
+    }
+}
+.cover-photo1{
+    background: url("https://tneacounselling.in/wp-content/uploads/2022/08/Saveetha-Engineering-College-Kancheepuram.jpg");
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    animation-name:cover1;
+    animation-duration: 2s;
+  }
+  @keyframes cover1{
+    from{
+        top:160%;
+    }
+    to{
+        top:0
+    }
+  }
+.cover-photo2{
+    background: url("https://www.adhiyamanmhss.com/adhiyaman/uploads/2021/12/banner-1.jpg");
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    animation-name:cover2;
+    animation-duration: 2s;
+  }
+  @keyframes cover2{
+    from{
+        top:100%
+    }
+    to{
+        top:0%;
+    }
+  }
+  .cover-photo3{
+    background: url("https://tse4.mm.bing.net/th?id=OIP.2II_JL0XxU8p43h3FFyE6gHaEN&pid=Api&P=0&h=180");
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    animation-name:cover1;
+    animation-duration: 2s;
+  }
+  .profile{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 93px 0 0 -175px;
+    border: 1px solid #1f1a32;
+    padding: 7px;
+    background: #292343;
+  }
+  .profile-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin:40px 0 0 0PX;
+  }
+  .edu{
+    text-align: center;
+    color:white;
+  }
+  .educationover{
+    display: flex;
+    justify-content: center;
+  }
+.projectsoverall{
+    height: 100vh;
+    width: 100%;
+    /* background-image: linear-gradient(to right,blue,black); */
+    padding-top:50px;
+    background-color: black;
+}
+.firstrow{
+    display: flex;
+    justify-content:center;
+    justify-content: space-evenly;
+    margin-top:30px;
+    position: relative;
+    animation-name:firstani;
+    animation-duration: 2s;
+}
+@keyframes firstani{
+    from{
+        right: 160%; 
+        transform:rotateY(360deg);
+    }
+    to{
+        right: 0;
+    }
+}
+.secondrow{
+    display: flex;
+    justify-content:center;
+    justify-content: space-evenly;
+    margin-top:30px;
+    position: relative;
+    animation-name:secondani;
+    animation-duration:2s;
+}
+@keyframes secondani{
+    from{
+        left:160%;
+        transform:rotateX(360deg);
+    }
+    to{
+        left: 0;
+    }
+}
+.formoveralldiv{
+    height:100vh;
+    width:100%;
+    padding-top:47px;
+}
+.contactform{
+    display: flex;
+}
+.cont{
+    color:white;
+}
+.cont:hover{
+    color:gold;
+    transform: rotatex(-360deg);
+    transition:2s;
+    transform:scale(1.1,1.1);
+}
+.contactdi{
+    height:80%;
+    width:50%;
+    padding-top:50px;
+    background-color: transparent;
+    padding-left:20%;
+    margin-top:20px;
+    position: relative;
+    animation-name:conani;
+    animation-duration:2s;
+}
+@keyframes conani{
+    from{
+        left:200%;
+        transform: rotateZ(-360deg);
+    }
+    to{
+        left:0px;
+    }
+}
+.formdiv{
+    height: 100%;
+    width: 50%;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+    animation-name:forani;
+    animation-duration:2s;
+}
+@keyframes forani{
+    from{
+        right:200%;
+        transform: rotateZ(360deg);
+    }
+    to{
+        right:0;
+    }
+}
+.formdiv:hover{
+    background-color: black;
+    border:2px solid white;
+}
+.fnts{
+    color: blue;
+    font-size:40px;
+    margin:10px;
+}
+.fnts:hover{
+    color: white;
+}
+.mailtxt{
+    font-size: 20px;
+    text-decoration: underline;
+    color: white;
+}
+.butt{
+    margin-left:35%;
+    height:30px;
+    width:100px;
+    background-color: black;
+    color: white;
+    border-radius:10px;
+    margin-top: 20px;
+}
+/* -----media query for phone */
+@media screen and (min-width:300px) and (max-width:600px) {
+    .container-fluid{
+        height: unset;
+    }
+    .aboutoverall{
+        flex-wrap: wrap;
+        height: unset;
+        width: unset;
+    }
+    .aboutme{
+        height:unset;
+        width:100%;
+        margin-top: 0px;
+    }
+    .myimgdiv{
+        width:100%;
+        height: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pimg{
+        height:200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    .frontbackoverall{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .skillsoveralldiv{
+        height: unset;
+    }
+    .frontend{
+        width: unset;
+        height: unset;
+    }
+    .backend{
+        height: unset;
+        width: unset;
+    }
+    .educationoverall{
+        height: unset;
+    }
+    .school1012{
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .classtwelth{
+        height: unset;
+    }
+    .college{
+        height: unset;
+    }
+    .school10{
+        height: unset;
+    }
+    .firstrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .secondrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .projectsoverall{
+        height: unset;
+    }
+    .contactform{
+        display: flex;
+        flex-direction: column;
+    }
+    .formoveralldiv{
+        height:unset;
+    }
+    .contactdiv{
+        width:100%;
+        height: unset;
+    }
+    .formdiv{
+        height: unset;
+        width: 100%;
+    }
+    .mailtxt{
+        font-size:20px;
+    }
+    .fnts{
+        font-size:20px;
+    margin:5px;
+    }
+    .educationover{
+        display: flex;
+        flex-direction: column;
+    }
+}
+ /* ---media query for tab---- */
+@media screen and (min-width:600px) and (max-width:1000px){
+    
+    .aboutoverall{
+        height: unset;
+    }
+    .aboutme{
+        height: unset;
+    }
+    .myimgdiv{
+        height: unset;
+    }
+    .frontbackoverall{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .skillsoveralldiv{
+        height: unset;
+    }
+    .frontend{
+        width: unset;
+        height: unset;
+    }
+    .backend{
+        height: unset;
+        width: unset;
+    }
+    .educationoverall{
+        height: unset;
+    }
+    .school1012{
+        height: unset;
+    }
+    .classtwelth{
+        height: unset;
+    }
+    .college{
+        height: unset;
+    }
+    .school10{
+        height: unset;
+    }
+    .contactform{
+        display: flex;
+        flex-direction: column;
+    }
+    .formoveralldiv{
+        height:unset;
+    }
+    .contactdiv{
+        width:100%;
+        height: unset;
+        margin-left:20%;
+    }
+    .formdiv{
+        height: unset;
+        width:unset;
+    }
+    .educationover{
+        display: flex;
+        flex-direction: column;
+    }
+}
